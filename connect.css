@@ -185,3 +185,20 @@
     color: #fff;
     background: var(--navy-900);
 }
+
+@media (max-width: 760px) {
+    .contact-options {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-card {
+        align-items: center;
+        text-align: center;
+    }
+
+    .guest-connection,
+    .app-connections {
+        flex-direction: column;
+        text-align: center;
+    }
+}
