@@ -1,58 +1,230 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <title>About | Bozeman Anglican</title>
-        
-        <link rel="stylesheet" href="style.css">
-    </head>
+    <title>About | Bozeman Anglican</title>
 
-    <body>
-        <div id="header"></div>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="about.css">
+</head>
 
-        <main class="about-page">
-            <section class="vision">
-                <h1>Our Vision</h1>
-                <p>
-                    We are reaching the Gallatin Valley with the transforming love of
-                    Jesus Christ&mdash;through the richness of church tradition,
-                    fellowship, and prayer. The relationships of our daily lives are
-                    also essential to meaningful Christian ministry.
-                </p>
-            </section>
+<body>
+    <div id="header"></div>
 
-            <section class="staff" aria-labelledby="clergy-title">
-                <div class="staff-heading">
-                    <h2 id="clergy-title">Our Clergy</h2>
+    <main class="about-page">
+
+        <!-- Vision -->
+        <section class="vision">
+            <div class="vision-inner">
+                <div class="vision-content">
+                    <h2>Our Vision</h2>
+
+                    <div class="vision-rule"></div>
+
+                    <p>
+                        We are reaching the Gallatin Valley with the transforming love of
+                        Jesus Christ&mdash;through the richness of church tradition,
+                        fellowship, and prayer. The relationships of our daily lives are
+                        also essential to meaningful Christian ministry.
+                    </p>
                 </div>
 
-                <div class="priest-window">
-                    <img src="" alt="Fr. Alexander Leighton">
+                <div class="vision-image">
+                    <img src="images/about-vison.png" alt="">
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Clergy -->
+        <section class="staff">
+            <div class="staff-inner">
+                <h2>Our Clergy</h2>
+
+                <div class="staff-window">
+
+                    <div class="staff-image">
+                        <img src="" alt="Fr. Alexander Leighton">
+                    </div>
+
                     <div class="staff-description">
-                        <h2>Fr. Alexander Leighton</h2>
-                        <h3>Priest</h3>
+                        <p class="staff-role">Priest</p>
+
+                        <h3>Fr. Alexander Leighton</h3>
+
+                        <div class="staff-rule"></div>
+
                         <p class="staff-contact">
                             <a href="tel:+14064049417">(406) 404-9417</a>
                             <span aria-hidden="true">|</span>
-                            <a href="mailto:revaleighton@gmail.com">revaleighton@gmail.com</a>
+                            <a href="mailto:revaleighton@gmail.com">
+                                revaleighton@gmail.com
+                            </a>
                         </p>
                     </div>
+
                 </div>
-            </section>
+            </div>
+        </section>
 
-            <section class="beliefs">
-                <h2>Our Beliefs</h2>
-                <p>We are an Anglican church rooted in historic Christian faith.</p>
-                <a href="https://anglicanchurch.net/about/">
-                    Find out more
-                </a>
-            </section>
-        </main>
 
-        <div id="footer"></div>
+        <!-- Distinctives -->
+        <section class="beliefs">
+            <div class="beliefs-inner">
+                <h2>Our Distinctives</h2>
 
-        <script src="js/components.js"></script>
-    </body>
+                <div class="beliefs-slider">
+
+                    <div class="beliefs-slides">
+
+                        <article class="beliefs-slide active">
+                            <div class="belief-image">
+                                <img src="" alt="">
+                            </div>
+
+                            <div class="beliefs-section-text">
+                                <h4>Rhythms of Prayer</h4>
+                                <p>
+                                    We practice corporate, fixed-hour prayer practices
+                                    that anchor us in worship, structure the day around Christ,
+                                    and shape how we relate to time.
+                                </p>
+                            </div>
+                        </article>
+
+
+                        <article class="beliefs-slide">
+                            <div class="belief-image">
+                                <img src="" alt="">
+                            </div>
+
+                            <div class="beliefs-section-text">
+                                <h4>Life Together</h4>
+                                <p>
+                                    We embody hospitality that invites relationship,
+                                    strengthens community, and welcomes the wandering
+                                    to build belonging in our everyday lives.
+                                </p>
+                            </div>
+                        </article>
+
+
+                        <article class="beliefs-slide">
+                            <div class="belief-image">
+                                <img src="" alt="">
+                            </div>
+
+                            <div class="beliefs-section-text">
+                                <h4>Thin Places</h4>
+                                <p>
+                                    We embrace a sacramental view of reality that notices
+                                    God's power and presence and is awake to the wonder
+                                    of life on the land with Him.
+                                </p>
+                            </div>
+                        </article>
+
+
+                        <article class="beliefs-slide">
+                            <div class="belief-image">
+                                <img src="" alt="">
+                            </div>
+
+                            <div class="beliefs-section-text">
+                                <h4>Threshold Spaces</h4>
+                                <p>
+                                    We are building bridges through low-risk exploration
+                                    opportunities that cultivate curiosity and welcome questions.
+                                </p>
+                            </div>
+                        </article>
+
+
+                        <article class="beliefs-slide">
+                            <div class="belief-image">
+                                <img src="" alt="">
+                            </div>
+
+                            <div class="beliefs-section-text">
+                                <h4>Kindred Callings</h4>
+                                <p>
+                                    We intentionally foster spiritual friendships which are marked
+                                    by deep discernment and profound transformation to produce wise,
+                                    relational leaders.
+                                </p>
+                            </div>
+                        </article>
+
+
+                        <article class="beliefs-slide">
+                            <div class="belief-image">
+                                <img src="" alt="">
+                            </div>
+
+                            <div class="beliefs-section-text">
+                                <h4>Anglican</h4>
+                                <p>
+                                    We are an Anglican church rooted in historic Christian faith.
+                                </p>
+
+                                <a
+                                    href="https://anglicanchurch.net/about/"
+                                    class="belief-link"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+                                    Find out more
+                                </a>
+                            </div>
+                        </article>
+
+                    </div>
+
+
+                    <!-- Slider controls -->
+                    <div class="beliefs-controls">
+
+                        <button
+                            class="beliefs-arrow"
+                            id="belief-prev"
+                            type="button"
+                            aria-label="Previous distinctive"
+                        >
+                            <span aria-hidden="true">←</span>
+                        </button>
+
+                        <div class="beliefs-dots" aria-label="Choose a distinctive">
+                            <button class="belief-dot active" type="button" aria-label="Go to Rhythms of Prayer"></button>
+                            <button class="belief-dot" type="button" aria-label="Go to Life Together"></button>
+                            <button class="belief-dot" type="button" aria-label="Go to Thin Places"></button>
+                            <button class="belief-dot" type="button" aria-label="Go to Threshold Spaces"></button>
+                            <button class="belief-dot" type="button" aria-label="Go to Kindred Callings"></button>
+                            <button class="belief-dot" type="button" aria-label="Go to Anglican"></button>
+                        </div>
+
+                        <button
+                            class="beliefs-arrow"
+                            id="belief-next"
+                            type="button"
+                            aria-label="Next distinctive"
+                        >
+                            <span aria-hidden="true">→</span>
+                        </button>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+
+    <div id="footer"></div>
+    <script src="js/beliefs.js"></script>
+    <script src="js/components.js"></script>
+</body>
 </html>
+```

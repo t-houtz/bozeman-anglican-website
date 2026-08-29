@@ -1,0 +1,187 @@
+
+.connect-page {
+    padding-block: clamp(3.5rem, 8vw, 7rem);
+}
+
+.connect-intro {
+    max-width: 760px;
+    margin: 0 auto clamp(2.5rem, 6vw, 4.5rem);
+    text-align: center;
+}
+
+.eyebrow {
+    margin-bottom: 0.7rem;
+    color: var(--gold);
+    font-size: 0.76rem;
+    font-weight: 600;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+}
+
+.connect-intro h1 {
+    margin-bottom: 1.2rem;
+    font-size: clamp(3rem, 7vw, 5.25rem);
+    letter-spacing: -0.03em;
+}
+
+.connect-intro > p:last-child {
+    max-width: 650px;
+    margin: 0 auto;
+    color: var(--muted);
+    font-size: 1.08rem;
+}
+
+.contact-options {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.25rem;
+}
+
+.contact-card {
+    min-width: 0;
+    padding: clamp(2rem, 5vw, 3.25rem);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: var(--ink);
+    background: var(--paper);
+    border: 1px solid var(--line);
+    border-top: 4px solid var(--gold);
+    border-radius: var(--radius);
+    box-shadow: 0 12px 32px rgba(16, 28, 43, 0.07);
+    text-decoration: none;
+    transition: transform 180ms ease, box-shadow 180ms ease, border-color 180ms ease;
+}
+
+.contact-card:hover {
+    border-color: rgba(178, 138, 74, 0.55);
+    box-shadow: var(--shadow);
+    transform: translateY(-4px);
+}
+
+.contact-icon {
+    width: 48px;
+    height: 48px;
+    margin-bottom: 1.4rem;
+    display: grid;
+    place-items: center;
+    color: var(--paper);
+    background: var(--navy-900);
+    border-radius: 50%;
+    font-family: Georgia, serif;
+    font-size: 1.3rem;
+}
+
+.contact-label {
+    margin-bottom: 0.35rem;
+    color: var(--muted);
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+}
+
+.contact-card strong {
+    max-width: 100%;
+    color: var(--navy-900);
+    font-family: "Cormorant Garamond", Georgia, serif;
+    font-size: clamp(1.5rem, 3vw, 2rem);
+    line-height: 1.25;
+    overflow-wrap: anywhere;
+}
+
+.contact-action {
+    margin-top: 1.4rem;
+    color: var(--gold);
+    font-size: 0.84rem;
+    font-weight: 600;
+}
+
+.guest-connection,
+.app-connections {
+    margin-top: 1.25rem;
+    padding: clamp(2.5rem, 6vw, 4.5rem);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: clamp(2rem, 5vw, 5rem);
+    border-radius: var(--radius);
+}
+
+.guest-connection {
+    background: var(--navy-900);
+    box-shadow: var(--shadow);
+}
+
+.guest-connection > div,
+.app-connections > div {
+    max-width: 650px;
+}
+
+.guest-connection h2,
+.app-connections h2 {
+    margin-bottom: 0.7rem;
+    font-size: clamp(2.2rem, 5vw, 3.5rem);
+}
+
+.guest-connection h2,
+.guest-connection p:not(.eyebrow) {
+    color: #fff;
+}
+
+.guest-connection p:last-child,
+.app-connections p:last-child {
+    margin-bottom: 0;
+}
+
+.button {
+    flex: 0 0 auto;
+    text-align: center;
+}
+
+.button-gold {
+    display: inline-block;
+
+    padding: 14px 28px;
+
+    background-color: #c9a45c;
+    color: #fff;
+
+    font-size: 1rem;
+    font-weight: 500;
+    text-decoration: none;
+
+    border: 1px solid #c9a45c;
+    border-radius: 2px;
+
+    transition: background-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
+}
+
+.button-gold:hover {
+    background-color: #b38d49;
+    border-color: #b38d49;
+
+    transform: translateY(-2px);
+}
+
+.button-gold:active {
+    transform: translateY(0);
+}
+
+.app-connections {
+    margin-bottom: 0;
+    background: rgba(255, 253, 249, 0.68);
+    border: 1px solid var(--line);
+}
+
+.button-outline {
+    min-width: 215px;
+    color: var(--navy-900);
+    background: transparent;
+    border-color: var(--navy-900);
+}
+
+.button-outline:hover {
+    color: #fff;
+    background: var(--navy-900);
+}
