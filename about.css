@@ -455,19 +455,6 @@
     }
 
 
-    .staff {
-        width: calc(100% - 32px) !important;
-        padding: 70px 0;
-    }
-
-    .section-header {
-        margin-bottom: 35px;
-    }
-
-    .section-header h2 {
-        font-size: 2.15rem;
-    }
-
     .priest-image {
         min-height: 340px;
     }

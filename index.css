@@ -254,3 +254,111 @@
     content: "";
     background: var(--gold);
 }
+
+/* =========================
+   iPhone / Mobile
+   ========================= */
+
+@media (max-width: 600px) {
+
+    /* General spacing */
+    .content {
+        padding-block: 2.5rem;
+    }
+
+    .hero {
+        min-height: 520px;
+        padding: 3.5rem 1.25rem;
+
+        border-radius: var(--radius);
+    }
+
+    .hero::before {
+        inset: 0.65rem;
+    }
+
+    .hero::after {
+        width: 85vw;
+
+        box-shadow:
+            0 0 0 45px rgba(216, 189, 135, 0.035),
+            0 0 0 90px rgba(216, 189, 135, 0.02);
+    }
+
+    .hero h1 {
+        max-width: 100%;
+
+        font-size: clamp(3rem, 15vw, 4.5rem);
+        line-height: 0.95;
+    }
+
+    .hero-message {
+        max-width: 340px;
+        margin-top: 1.5rem;
+        margin-bottom: 1.75rem;
+
+        font-size: 1.05rem;
+        line-height: 1.55;
+    }
+
+    .home-values {
+        max-width: 100%;
+        margin-top: 4.5rem;
+        padding-inline: 1.25rem;
+    }
+
+    .home-values h2 {
+        font-size: clamp(2rem, 9vw, 2.8rem);
+        line-height: 1.15;
+    }
+
+    .home-values::before,
+    .home-values::after {
+        width: 35px;
+    }
+
+    .sunday-worship {
+        margin-top: 4rem;
+    }
+
+    .service-heading {
+        padding-inline: 1.25rem;
+        margin-bottom: 2rem;
+    }
+
+    .service-heading h2 {
+        font-size: 2rem;
+    }
+    .service-details {
+        grid-template-columns: 1fr;
+    }
+
+    .service-detail {
+        padding: 1.35rem 1.25rem;
+    }
+
+    .service-detail + .service-detail {
+        border-left: none;
+        border-top: 1px solid var(--line);
+    }
+
+    .service-detail.time,
+    .service-detail.location {
+        justify-content: flex-start;
+    }
+
+    .service-detail strong {
+        font-size: 1.25rem;
+    }
+
+    .service-icon {
+        width: 42px;
+        height: 42px;
+        font-size: 1.1rem;
+    }
+
+    .home-link {
+        padding: 0.9rem 1.25rem;
+        font-size: 0.72rem;
+    }
+}
